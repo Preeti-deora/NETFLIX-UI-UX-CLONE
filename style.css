@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(./img/netflixteaser.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:max(1700px,100vw);
+    height:110vh;
+    position: relative;
+}
+.main .box{
+    height: 110vh;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 66.53px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 18px;
+    padding:0px 30px;
+    text-align: center;
+}
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero >:nth-child(2){
+    font-size:24px;
+    font-weight: 400px;
+    text-align: center;
+}
+.hero >:nth-child(3){
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+}
+.separation{
+    height: 9.5px;
+    background-color: rgb(46, 44,44);
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: 500px;
+    background-color: rgba(23,23,23,0.7);
+    color: white;
+    border: 1px solid rgba(246,238,238,0.5);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-red{
+background-color: red;
+color: white;
+padding: 6px 24px;
+font-size: 20px;
+height: 60px;
+border-color: transparent;
+}
+.btn-red-sm{
+background-color: red;
+color: white;
+border-color: transparent;
+}
+.main input{
+    background-color: rgba(23,23,23,0.7);
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(246,238,238,0.5);
+    color: white;
+}
+.first{
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding: 55px 150px 55px 140px;
+    gap: 15px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    position: relative;
+    width: 450px;
+}
+.image video{
+    position: absolute;
+    width:330px;
+    z-index: -10;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first >div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+}
+.third img{
+    position: relative;
+    top: 70px;
+    width: 450px;
+}
+.third video{
+    position:absolute;
+    z-index: -10;
+    width:280px;
+}
+.faq{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     padding-top: 85px;
+     padding-bottom: 50px;
+     font-size: 25px;
+}
+.frequently-asked-questions{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    width: 80vw;
+    
+}
+.accordion {
+    background-color: #2D2C2C;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover {
+    background-color: #626161;
+  }
+  .panel {
+    padding: 18px;
+    background-color: #2D2C2C;
+    display: none;
+    text-align: left;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 24px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+.faq input{
+    background-color: rgba(23,23,23,0.7);
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(246,238,238,0.5);
+    color: white;
+}
+footer{
+    color: white;
+    max-width: 76vw;
+    margin: auto;
+    padding: 40px;
+}
+.start{
+    padding:34px 0px;
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer a{
+    text-decoration: underline;
+    color: white;
+}
+.footer-item{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+@media(max-width:1100px){
+    .first{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .first >div :nth-child(1){
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .first > div :nth-child(2){
+        font-size: 18px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        color: white;
+    }
+}
+   /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    font-size: 15px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 6px 2px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content .en:hover {
+    background-color: #0071DC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dropdown-content .hi:hover {
+    background-color: #0071DC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  .show {
+    display:block;
+}
